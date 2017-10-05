@@ -1,13 +1,22 @@
 .wrapper {
     width: 480px;
-    height: 100%;  
+/*    height: 100%;*/
+    margin-left: auto;
+    margin-right: auto;
+/*    float:center;*/
 /*
     margin-left: 50px;
     margin-top: 53px;
 */
-    padding-left: 36px;
-    padding-top: 63px;
+    padding-left: 35px;
+    padding-top: 60px;
+    padding-right: 35px;
+    padding-bottom: 60px;
+    border: 2px solid;
+    border-color: #263555;
+    box-shadow: 0 0 10px 1px #263555;
 }
+
 .ap {
     font-size: 25px;
     color: #263555;
@@ -15,8 +24,29 @@
     text-transform: uppercase;
     text-align: left;
 }
+
+.op {
+    font-size: 25px;
+    color: #263555;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 33px;
+}
+
+.wwo {
+    font-size: 25px;
+    color: #263555;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 100px;
+}
+
 img {
     height: 98px;
+    margin-bottom: 28px;
+    margin-top: 33px;
     width: 100%;
 }
 
@@ -27,6 +57,7 @@ img {
     line-height: 1.357;
     text-align: left;
 }
+
 .first-text {
     font-size: 12px;
 /*    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;*/
@@ -51,11 +82,13 @@ img {
     line-height: 1.417;
     text-align: left; 
 }
+
 .li1 {
     display: inline-block;
     font-size: 14px;
     color: #263555;
     line-height: 1.629;
+    margin-top: 40px;
 }
 
 .li2 {
@@ -64,6 +97,7 @@ img {
     color: #263555;
     line-height: 1.629;
     vertical-align: top;
+    margin-top: 40px;
 }
 
 ul {
