@@ -9,8 +9,8 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 1022px;
-    height: 1305px;
+    width: 1025px;
+    height: 1300px;
     background-color: #fff;
     padding-top: 115px;
     padding-left: 63px ;
@@ -18,11 +18,24 @@ body {
     margin-top: 115px;
 }
 
-.left {
+.top {
+    width: 900px;
+    height: 535px;
     display: inline-block;
-    margin-right: 63px;
+}
+
+.bottom {
+    width: 900px;
+    height: 560px;
+    display: inline-block;
+}
+
+.left-top {
+    display: inline-block;
+/*    margin-right: 63px;*/
     float: left;
-    width: 630px;
+    width: 640px;
+    height: 535px;
 }
 
 h2 {
@@ -31,10 +44,6 @@ h2 {
     color: #263555;
     text-transform: uppercase;
     margin-bottom: 33px;    
-}
-
-div {
-    
 }
 
 img {
@@ -52,12 +61,24 @@ h3 {
     color: #263555;
 }
 
-.list1:before {
-    content: "1";
-    color: brown;
-    padding-right: 26px;
+.right-top {
+    display: inline-block;
+    width: 200px;
+    height: 535px;
+    box-sizing: border-box;
+    float: right;
 }
 
+.list1 {
+    position: relative;
+    width: 170px;
+}
+
+.list1:before {
+    content: url(/img/circle%201.png);
+    margin-right: 26px;
+    position: absolute;
+}
 
 p {
     font-family: "Arial", Serif;
@@ -65,21 +86,9 @@ p {
     line-height: 1.462;
 }
 
-.right {
-    display: inline-block;
-    width: 200px;
-    box-sizing: border-box;
-    margin-right: 63px;
-    float: right;
-}
-
-h2 {
-    
-}
 
 .wwo {
-    margin-top: 113px;
-    margin-bottom: 72px;
+    margin-bottom: 60px;
 }
 
 .left-list {
@@ -89,7 +98,6 @@ h2 {
         color: #263555;
         font-size: 15px;
         line-height: 1.52;
-/*        margin-left: auto;*/
 }
 
 .left-list > li:before {
@@ -119,10 +127,64 @@ h2 {
     margin-bottom: 40px;
 }
 
-/*
 .clearfix:after {
    content: "";
-   display: table;
+   display: inline-block;
    clear: both;
 }
-*/
+
+hr {
+    margin-top: 55px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 900px;
+}
+
+.left-bottom {
+    display: inline-block;
+    float: left;
+    width: 640px;
+    height: 535px;
+}
+
+.right-bottom {
+    display: inline-block;
+    width: 210px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.box_testimonial {
+    height: 192px;
+    width: 210px;
+    background-color: #fcfafa;
+}
+
+.text-testimonial {
+    font-family: "Arial", serif;
+    font-size: 15px;
+    line-height: 1.267;
+    padding-left: 24px;
+    padding-right: 22px;
+    padding-bottom: 25px;
+    padding-top: 26px;
+    color: #263555;
+}
+
+.text-testimonial:before {
+    content: open-quote;
+}
+.text-testimonial:after {
+    content: close-quote;
+} 
+
+.triangl {
+    width: 0;
+	height: 0;
+    margin-left: 70px;
+    margin-top: -6px;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 25px solid #fcfafa;
+}
