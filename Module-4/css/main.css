@@ -1,0 +1,128 @@
+body {
+    width: 1920px;
+    height: 1795px;
+    background-image: url(/img/page-bg.png);
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 1022px;
+    height: 1305px;
+    background-color: #fff;
+    padding-top: 115px;
+    padding-left: 63px ;
+    margin-left: 454px;
+    margin-top: 115px;
+}
+
+.left {
+    display: inline-block;
+    margin-right: 63px;
+    float: left;
+    width: 630px;
+}
+
+h2 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 32px;
+    color: #263555;
+    text-transform: uppercase;
+    margin-bottom: 33px;    
+}
+
+div {
+    
+}
+
+img {
+    width: 360px;
+    height: 280px;
+    float: left;
+    padding-right: 35px;
+    padding-bottom: 25px;
+}
+
+h3 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15px;
+    line-height: 1.267;
+    color: #263555;
+}
+
+.list1:before {
+    content: "1";
+    color: brown;
+    padding-right: 26px;
+}
+
+
+p {
+    font-family: "Arial", Serif;
+    font-size: 13px;
+    line-height: 1.462;
+}
+
+.right {
+    display: inline-block;
+    width: 200px;
+    box-sizing: border-box;
+    margin-right: 63px;
+    float: right;
+}
+
+h2 {
+    
+}
+
+.wwo {
+    margin-top: 113px;
+    margin-bottom: 72px;
+}
+
+.left-list {
+        display: inline-block;
+        list-style-type: none;
+        font-family: "Arial", serif;
+        color: #263555;
+        font-size: 15px;
+        line-height: 1.52;
+/*        margin-left: auto;*/
+}
+
+.left-list > li:before {
+    content: url(/img/mark.png);
+    padding-right: 15px;
+}
+
+.right-list {
+    display: inline-block;
+    list-style-type: none;
+    font-family: "Arial", serif;
+    color: #263555;
+    font-size: 15px;
+    line-height: 1.52;
+    vertical-align: top;
+}
+
+.right-list > li:before {
+    content: url(/img/mark.png);
+    padding-right: 15px;
+}
+
+.right-column {
+    font-family: "Arial", serif;
+    font-size: 13px;
+    line-height: 1.462;
+    margin-bottom: 40px;
+}
+
+/*
+.clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+*/
