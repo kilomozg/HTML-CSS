@@ -75,7 +75,7 @@ h3 {
 }
 
 .list1:before {
-    content: url(/img/circle%201.png);
+    content: url(/img/circle1.png);
     margin-right: 26px;
     position: absolute;
 }
@@ -166,7 +166,7 @@ hr {
     font-size: 15px;
     line-height: 1.267;
     padding-left: 24px;
-    padding-right: 22px;
+    padding-right: 15px;
     padding-bottom: 25px;
     padding-top: 26px;
     color: #263555;
@@ -183,8 +183,28 @@ hr {
     width: 0;
 	height: 0;
     margin-left: 70px;
-    margin-top: -6px;
+    margin-top: -26px;
 	border-left: 30px solid transparent;
 	border-right: 30px solid transparent;
 	border-top: 25px solid #fcfafa;
+}
+
+.left_li {
+    padding-bottom: 10px;
+}
+
+.testimonial {
+    font-family: "Arial", serif;
+    font-size: 16px;
+    line-height: 1.425;
+    margin-top: 41px;
+    text-align: center;
+    color: #263555;
+}
+
+span {
+    font-family: "Arial", serif;
+    font-size: 13px;
+    line-height: 1.462;
+    padding-left: 13px;
 }
