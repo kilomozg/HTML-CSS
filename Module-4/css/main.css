@@ -1,7 +1,8 @@
 body {
-    width: 1920px;
+    width: 1440px;
     height: 1795px;
-    background-image: url(/img/page-bg.png);
+    background-image: url("../img/page-bg.png");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -10,11 +11,11 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 1025px;
-    height: 1300px;
+    height: 1350px;
     background-color: #fff;
     padding-top: 115px;
     padding-left: 63px ;
-    margin-left: 454px;
+    margin-left: 325px;
     margin-top: 115px;
 }
 
@@ -62,20 +63,22 @@ h3 {
 }
 
 .right-top {
-    display: inline-block;
+/*    display: inline-block;*/
     width: 200px;
-    height: 535px;
+/*    height: 535px;*/
     box-sizing: border-box;
     float: right;
+    position: relative;
 }
 
 .list1 {
     position: relative;
+/*    text-indent: 30px;*/
     width: 170px;
 }
 
 .list1:before {
-    content: url(/img/circle1.png);
+    content: url("../img/circle1.png");
     margin-right: 26px;
     position: absolute;
 }
@@ -101,7 +104,7 @@ p {
 }
 
 .left-list > li:before {
-    content: url(/img/mark.png);
+    content: url("../img/mark.png");
     padding-right: 15px;
 }
 
@@ -116,7 +119,7 @@ p {
 }
 
 .right-list > li:before {
-    content: url(/img/mark.png);
+    content: url("../img/mark.png");
     padding-right: 15px;
 }
 
@@ -124,7 +127,7 @@ p {
     font-family: "Arial", serif;
     font-size: 13px;
     line-height: 1.462;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .clearfix:after {
@@ -207,4 +210,16 @@ span {
     font-size: 13px;
     line-height: 1.462;
     padding-left: 13px;
+}
+
+
+
+.list2 {
+    position: relative;
+}
+
+.list2:before {
+    content: url("../img/circle1.png");
+    margin-right: 26px;
+    position: absolute;
 }
