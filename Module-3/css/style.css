@@ -1,13 +1,8 @@
 .wrapper {
-    width: 480px;
-/*    height: 100%;*/
-    margin-left: auto;
-    margin-right: auto;
-/*    float:center;*/
-/*
+    width: 85%;
+    float: center;
     margin-left: 50px;
     margin-top: 53px;
-*/
     padding-left: 35px;
     padding-top: 60px;
     padding-right: 35px;
@@ -103,3 +98,5 @@ img {
 ul {
     list-style-type: none; 
 }
+
+

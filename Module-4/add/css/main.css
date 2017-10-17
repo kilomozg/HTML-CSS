@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
     background-color: #f0f8ff;
     box-shadow: 4px 9px 5px 0px rgba(83,104,120,0.5);
-    width: 50%;
+    width: 90%;
     padding: 50px;
     margin: 0 auto;
 }
@@ -43,6 +43,22 @@ ul {
     padding-top: 10px;
     border: solid 2px;
     background-color: aqua;
+}
+
+.box7 ul li:before {
+    content: counter(counter);
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    vertical-align: middle;
+    padding: 0 15px 0 15px;
+}
+
+.box7 ul li {
+    counter-increment: counter;
+    padding: 10px 0px 10px 15px;
 }
 
 .menu li:hover {
@@ -178,14 +194,14 @@ table {
 .content {
     display: inline-block;
     height: 200px;
-    width: 45%;
+    width: 49%;
     background-color: aqua;
 }
 
 .aside {
     display: inline-block;
     height: 200px;
-    width: 45%;
+    width: 49%;
     background-color: red;
 }
 
@@ -193,4 +209,12 @@ table {
 
 .box6 {
     margin-top: 25px;
+}
+
+.box7 {
+    margin-top: 25px;
+}
+
+.box7 ul {
+    counter-reset: counter;
 }
