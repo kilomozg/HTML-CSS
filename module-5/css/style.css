@@ -1,0 +1,253 @@
+p {
+    margin: 0px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+body {
+    width: 1920px;
+    height: 2112px;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 1024px;
+    height: auto;
+    margin-top: 46px;
+    margin-right: 446px;
+    margin-left: 446px;
+}
+
+header {
+    width: 1024px;
+    height: 235px;
+}
+
+main {
+    display: block;
+    height: auto;
+    background-color: #fff;
+    padding: 58px 61px;
+}
+
+.top_nav {
+    list-style: none;
+    position: relative;
+    padding-left: -40px;
+}
+.nav_menu {
+    display: inline-block;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #fff;
+    margin: 0 33px;
+}
+.nav_menu > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.journey{
+    font-family: "Dorsa", sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 140px;
+    color: #263555;
+    background-color: #fff;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: relative;
+    top: 13px;
+    text-align: center;
+}
+
+.nav_menu:hover {
+    color: #263555;
+}
+.submenu {
+    background-color: #fff;
+    width: 66px;
+    height: 84px;
+    padding-left: -40px;
+    text-align: center;
+}
+
+.submenu_list {
+    background-color: #fff;
+    width: 66px;
+    height: 84px;
+    position: absolute;
+    line-height: 1.4;
+    text-align: center;
+    list-style: none;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    display: none;
+}
+
+.submenu_list:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -8px;
+    left: 25px;
+}
+
+.submenu_list a {
+     text-decoration: none;
+     color: #6b7488;
+}
+
+.about:hover > .submenu_list {
+    display: block;
+    top: 100px;
+    left: 145px;
+}
+
+.slider {
+    width: 900px;
+    position: relative;
+}
+
+.slider__text__1 {
+    position: absolute;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 22.41px;
+    color: #263555;
+    bottom: 324px;
+    text-transform: uppercase;
+    padding: 23px 21px;
+    background-color: #fff;
+    border-left: 0.1px solid #000;
+}
+
+.slider__text__2 {
+    position: absolute;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 34.42px;
+    color: #fff;
+    bottom: 250px;
+    text-transform: uppercase;
+    padding: 17px 16px;
+    background-color: #38afe5;
+}
+
+.slider__nav {
+    position: absolute;
+    bottom: 45px;
+    background-color: #38afe5;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    left: 60px;
+}
+
+.slider__nav:before {
+    content: "←";
+    color: #fff;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 20px;
+} 
+
+.slider__nav:after {
+    content: "→";
+    color: #fff;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 52px;
+}
+
+h2 {
+    /*margin: 0px;*/
+    margin-top: 59px;
+    margin-bottom: 49px;
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30.42px;
+    color: #263555;
+}
+
+.venice {
+    display: inline-block;
+    position: relative;
+
+}
+
+.venice__text {
+    position: absolute;
+    bottom: 4px;
+    width: 146px;
+    height: 271px;
+    background-color: #193149;
+    display: none;
+
+}
+
+.venice:hover > .venice__text {
+    display: block;
+
+}
+
+h3 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30.42px;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+}
+
+span {
+    display: block;
+    padding-left: 15px;
+    padding-right: 5px;
+    line-height: 1.557;
+    color: #cbc6c6;
+    font-family: "Arial";
+    font-size: 10.41px;
+}
+
+button {
+    background-color: #fcf5f7;
+    border: none;
+    border-radius: 3px;
+    position: absolute;
+    left: 80px;
+    bottom: 25px;
+}
+
+.ny {
+    display: inline-block;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.paris {
+    display: inline-block;
+}
+
+.to__top {
+    position: fixed;
+    top: 789px;
+    right: 468px;
+}
