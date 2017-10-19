@@ -1,0 +1,147 @@
+h3 {
+    margin: 0px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15px;
+    line-height: 1.267;
+    color: #263555;
+}
+
+h2 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 32px;
+    color: #263555;
+    text-transform: uppercase;
+    margin-bottom: 33px;    
+}
+
+
+ul {
+    padding-left: 0px;
+}
+
+body {
+    width: 100%;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    width: 1024px;
+    height: 235px;
+}
+
+main {
+    display: block;
+    flex-direction: column;
+    height: auto;
+    background-color: #fff;
+    padding: 58px 61px;
+}
+
+.top_nav {
+    list-style: none;
+    position: relative;
+    padding-left: -40px;
+}
+.nav_menu {
+    display: inline-block;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #fff;
+    margin: 0 33px;
+}
+.nav_menu > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.journey{
+    font-family: "Dorsa", sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 140px;
+    color: #263555;
+    background-color: #fff;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: relative;
+    top: 13px;
+    text-align: center;
+    text-shadow: none;
+}
+
+.nav_menu:hover {
+    color: #263555;
+/*    text-shadow: 1px 1px 2px black, 0 0 1em #263555;*/
+}
+.submenu {
+    background-color: #fff;
+    width: 66px;
+    height: 84px;
+    padding-left: -40px;
+    text-align: center;
+}
+
+.submenu_list {
+    background-color: #fff;
+    width: 66px;
+    height: 84px;
+    position: absolute;
+    line-height: 1.4;
+    text-align: center;
+    list-style: none;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    display: none;
+}
+
+.submenu_list:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -8px;
+    left: 25px;
+}
+
+.submenu_list a {
+     text-decoration: none;
+     color: #6b7488;
+}
+
+.about:hover > .submenu_list {
+    display: block;
+    top: 100px;
+    left: 145px;
+    transition: all .2s ease-in-out;
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.agency__profile {
+    width: 700px;
+}
+
+.img {
+    width: 360px;
+    height: 280px;
+    float: left;
+}
