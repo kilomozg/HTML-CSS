@@ -15,9 +15,9 @@ h2 {
 }
 
 
-ul {
+/*ul {
     padding-left: 0px;
-}
+}*/
 
 body {
     width: 100%;
@@ -33,7 +33,7 @@ body {
 
 header {
     width: 1024px;
-    height: 235px;
+    height: 190px;
 }
 
 main {
@@ -47,8 +47,9 @@ main {
 .top_nav {
     list-style: none;
     position: relative;
-    padding-left: -40px;
+    padding: 0;
 }
+
 .nav_menu {
     display: inline-block;
     font-family: 'Pathway Gothic One', sans-serif;
@@ -134,7 +135,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 25px;
+    padding-bottom: 25px;   
 }
 
 .agency__profile {
@@ -153,7 +154,7 @@ main {
 p {
     font-family: "Arial", sans-serif;
     font-size: 13px;
-    line-height: 1,462px;
+    line-height: 1.462;
 }
 
 .list1 {
@@ -200,7 +201,6 @@ p {
     color: #263555;
     font-size: 15px;
     line-height: 1.52;
-    margin-left: 70px;
     margin-right: 25px;
 }
 
@@ -231,8 +231,8 @@ p {
     background-color: #fcfafa;
 }
 
-.testimonial {
-    /*margin:auto;*/
+.left_li {
+    margin-bottom: 10px;
 }
 
 .text-testimonial {
@@ -252,12 +252,21 @@ p {
     padding-left: 48px;
 }
 
+
 .text-testimonial:before {
     content: open-quote;
 }
 .text-testimonial:after {
     content: close-quote;
 } 
+
+.name:before {
+    content: no-open-quote;
+}
+
+.name:after {
+    content: no-close-quote;
+}
 
 .triangl {
     width: 0;
@@ -274,4 +283,35 @@ span {
     font-size: 13px;
     line-height: 1.462;
     padding-left: 13px;
+}
+
+footer {
+    background-color: #30455b;
+    height: 133px;
+}
+
+.footer_links {
+
+    list-style-type: none;
+    display: flex;
+    direction: column;
+    text-transform: uppercase;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.footer_links a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.1429;
+    padding: 0;
+}
+
+.footer_box {
+    display: inline-block;
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 45px;
 }
