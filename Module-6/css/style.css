@@ -103,6 +103,7 @@ main {
     font-size: 20px;
     text-transform: uppercase;
     border-radius: 4px;
+    padding: 0;
     display: none;
 }
 
@@ -285,18 +286,24 @@ span {
     padding-left: 13px;
 }
 
-footer {
+/*footer {
     background-color: #30455b;
-    height: 133px;
+}
+*/
+
+.footer_box {
+    height: 110px;
+    display: flex;
+    background-color: #30455b;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-top: 35px;
+    position: relative;
 }
 
 .footer_links {
-
     list-style-type: none;
-    display: flex;
-    direction: column;
     text-transform: uppercase;
-    justify-content: space-around;
     margin: 0;
 }
 
@@ -309,9 +316,13 @@ footer {
     padding: 0;
 }
 
-.footer_box {
-    display: inline-block;
-    width: 700px;
-    margin: 0 auto;
-    padding-top: 45px;
+.footer_links li { 
+    padding-bottom: 10px;
+}
+
+.email {
+    color: #fff;
+    position: absolute;
+    left: 793px;
+    top: 82px;
 }
