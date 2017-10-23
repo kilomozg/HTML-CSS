@@ -1,9 +1,29 @@
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 1.462;
+  text-align: justify;
+}
+
 h2 {
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 32px;
     color: #263555;
     text-transform: uppercase;
     margin-bottom: 33px;    
+}
+
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h3 {
+    margin: 0px;
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 1.267;
+    color: #263555;
 }
 
 body {
@@ -125,7 +145,8 @@ main {
 .to_top {
     position: fixed;
     top: calc(100% - 100px);
-    right: calc(100% - 84.5%);
+    right: calc(100% - 83%);
+    z-index: 9999;
 }
 
 .footer_box {
@@ -135,6 +156,8 @@ main {
     justify-content: space-evenly;
     margin: 0 auto;
     padding-top: 35px;
+    padding-left: 100px;
+    padding-right: 100px;
     position: relative;
 }
 
@@ -147,21 +170,20 @@ main {
 .footer_links a {
     text-decoration: none;
     color: #fff;
-    font-family: "open Sans", sans-serif;
-    font-size: 16px;
-    line-height: 1.1429;
-    padding: 0;
+    font-family: Open Sans, Arial, sans-serif;
+    
 }
 
-.footer_links li { 
+.footer_links li {
     padding-bottom: 10px;
+    font-size: 16px;
 }
 
 .email {
     color: #fff;
     position: absolute;
-    left: 793px;
-    top: 82px;
+    left: 767px;
+    top: 78px;
 }
 
 .sub_footer {
@@ -221,9 +243,113 @@ main {
   filter: opacity(1);
 }
 
+.footer_links .contacts {
+  font-size: 12px;
+}
+
+
 footer p {
-    font-family: "Arial", sans-serif;
-    font-size: 12px;
-    color: #fff;
-    padding-left: calc(100% - 70%);
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  padding-left: calc(100% - 70%);
+}
+
+.blog_main_area {
+  display: flex;
+}
+
+.blog_left_item {
+  flex-grow: 2;
+  width: 670px;
+  margin-right: 27px;
+}
+
+.blog_right_item {
+  flex-grow: 1;
+}
+
+.blog_left_item h3 {
+  /*padding-top: 10px;*/
+}
+
+.blog_postname {
+  position: relative;
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  left: 40px;
+  line-height: 1.1875;
+  color: #263555;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.user {
+  position: relative;
+  left: 40px;
+  bottom: 13px;
+} 
+
+.blog_postname:before {
+  content: "23 APR";
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 9px;
+  width: 30px;
+  height: 30px;
+  left: -40px;
+  background-color: #38afe5;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.blog_postname:after {
+  content: "0 Comment(s)";
+  position: absolute;
+  left: 478px;
+  top: 15px;
+  text-transform: none;
+  color: #868f8f;
+  opacity: .7;
+}
+
+.blog_img {
+  width: 290px;
+  height: 230px;
+  /*margin-top: 15px;*/
+  margin-right: 20px;
+  float: left;
+}
+
+button {
+  margin-left: 310px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: #fcf5f6;
+  padding: 3px 10px;
+  border: 1px solid #c1bbbb;
+}
+
+.blog_right_list_item {
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12.8px;
+  line-height: 1.425;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.blog_right_list_item:before {
+  content: url(../img/mark.png);
+  position: absolute;
+  left: -30px;
+}
+
+.blog_right_list_item a {
+  text-decoration: none;
+  color: #263555;
+  font-weight: 600;
 }
