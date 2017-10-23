@@ -290,10 +290,16 @@ footer p {
   bottom: 13px;
 } 
 
+.user > a {
+  text-decoration: none;
+  color: inherit;
+} 
+
 .blog_postname:before {
   content: "23 APR";
   position: absolute;
   color: #fff;
+  line-height: 14px;
   text-align: center;
   font-family: "Arial", sans-serif;
   font-size: 9px;
