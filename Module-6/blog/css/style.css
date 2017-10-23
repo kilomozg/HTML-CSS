@@ -170,8 +170,7 @@ main {
 .footer_links a {
     text-decoration: none;
     color: #fff;
-    font-family: Open Sans, Arial, sans-serif;
-    
+    font-family: Open Sans, Arial, sans-serif;   
 }
 
 .footer_links li {
@@ -180,9 +179,10 @@ main {
 }
 
 .email {
+    font-family: Open Sans, Arial, sans-serif; 
     color: #fff;
     position: absolute;
-    left: 767px;
+    left: 770px;
     top: 78px;
 }
 

@@ -161,6 +161,7 @@ main {
     position: fixed;
     top: calc(100% - 100px);
     right: calc(100% - 84.5%);
+    z-index: 9999;
 }
 
 .footer_box {
@@ -170,6 +171,9 @@ main {
     justify-content: space-evenly;
     margin: 0 auto;
     padding-top: 35px;
+    padding-top: 35px;
+    padding-left: 100px;
+    padding-right: 100px;
     position: relative;
 }
 
@@ -193,10 +197,11 @@ main {
 }
 
 .email {
+    font-family: Open Sans, Arial, sans-serif; 
     color: #fff;
     position: absolute;
-    left: 793px;
-    top: 82px;
+    left: 749px;
+    top: 78px;
 }
 
 .sub_footer {
