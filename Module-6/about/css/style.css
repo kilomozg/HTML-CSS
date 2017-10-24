@@ -305,6 +305,8 @@ span {
     justify-content: space-evenly;
     margin: 0 auto;
     padding-top: 35px;
+    padding-left: 100px;
+    padding-right: 145px;
     position: relative;
 }
 
@@ -327,11 +329,17 @@ span {
     padding-bottom: 10px;
 }
 
+.contacts {
+    font-size: 12px;
+    /*text-transform: none;*/
+}
+
 .email {
+    font-family: Open Sans, Arial, sans-serif; 
     color: #fff;
     position: absolute;
-    left: 793px;
-    top: 82px;
+    left: 732px;
+    top: 75px;
 }
 
 .sub_footer {

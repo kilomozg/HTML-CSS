@@ -157,7 +157,7 @@ main {
     margin: 0 auto;
     padding-top: 35px;
     padding-left: 100px;
-    padding-right: 100px;
+    padding-right: 145px;
     position: relative;
 }
 
@@ -182,8 +182,8 @@ main {
     font-family: Open Sans, Arial, sans-serif; 
     color: #fff;
     position: absolute;
-    left: 770px;
-    top: 78px;
+    left: 732px;
+    top: 75px;
 }
 
 .sub_footer {
