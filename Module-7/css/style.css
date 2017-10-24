@@ -1,0 +1,256 @@
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 1.462;
+  text-align: justify;
+}
+
+h2 {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 32px;
+    color: #263555;
+    text-transform: uppercase;
+    margin-bottom: 33px;    
+}
+
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h3 {
+    margin: 0px;
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 1.267;
+    color: #263555;
+}
+
+body {
+    width: 100%;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    width: 1024px;
+    height: 190px;
+}
+
+main {
+    display: block;
+    flex-direction: column;
+    height: auto;
+    background-color: #fff;
+    padding: 58px 61px;
+}
+
+.top_nav {
+    list-style: none;
+    position: relative;
+    padding: 0;
+}
+
+.nav_menu {
+    display: inline-block;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #fff;
+    margin: 0 33px;
+}
+.nav_menu > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.journey{
+    font-family: "Dorsa", sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 140px;
+    color: #263555;
+    background-color: #fff;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: relative;
+    top: 13px;
+    text-align: center;
+    text-shadow: none;
+}
+
+.nav_menu:hover {
+    color: #263555;
+
+}
+.submenu {
+    background-color: #fff;
+    width: 66px;
+    height: 84px;
+    padding-left: -40px;
+    text-align: center;
+}
+
+.submenu_list {
+    background-color: #fff;
+    width: 66px;
+    height: 84px;
+    position: absolute;
+    line-height: 1.4;
+    text-align: center;
+    list-style: none;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 0;
+    display: none;
+}
+
+/*Треугольник выпадающего меню*/
+
+.submenu_list:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -8px;
+    left: 25px;
+}
+
+.submenu_list a {
+     text-decoration: none;
+     color: #6b7488;
+}
+
+.about:hover > .submenu_list {
+    display: block;
+    top: 100px;
+    left: 145px;
+    transition: all .2s ease-in-out;
+}
+
+
+.to_top {
+    position: fixed;
+    top: calc(100% - 100px);
+    right: calc(100% - 83%);
+    z-index: 9999;
+}
+
+.footer_box {
+    height: 110px;
+    display: flex;
+    background-color: #30455b;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+}
+
+.footer_links {
+    list-style-type: none;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.footer_links a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Open Sans, Arial, sans-serif;   
+}
+
+.footer_links li {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.email {
+    font-family: Open Sans, Arial, sans-serif; 
+    color: #fff;
+    position: absolute;
+    left: 770px;
+    top: 78px;
+}
+
+.sub_footer {
+    height: 125px;
+    display: block;
+}
+
+.social_networks {
+  margin: 25px auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.nav__item {
+  height: 45px;
+  flex-basis: 55px;
+}
+
+.nav__item>a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+.nav__item:nth-of-type(1)>a {
+  background-image: url(../img/sprites.png);
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+  filter: opacity(.7);
+}
+
+.nav__item:nth-of-type(2)>a {
+  background-image: url(../img/sprites.png);
+  background-repeat: no-repeat;
+  background-position: -130px -130px;
+  filter: opacity(.7);
+}
+
+.nav__item:nth-of-type(3)>a {
+  background-image: url(../img/sprites.png);
+  background-repeat: no-repeat;
+  background-position: -190px -190px;
+  filter: opacity(.7);
+}
+
+.nav__item:nth-of-type(4)>a {
+  background-image: url(../img/sprites.png);
+  background-repeat: no-repeat;
+  background-position: -190px -190px;
+  filter: opacity(.7);
+}
+
+.nav__item>a:hover {
+  filter: opacity(1);
+}
+
+.footer_links .contacts {
+  font-size: 12px;
+}
+
+
+footer p {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  padding-left: calc(100% - 70%);
+}
