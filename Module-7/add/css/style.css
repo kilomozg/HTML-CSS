@@ -29,7 +29,7 @@ h2 {
 	margin-bottom: 50px;
 }
 
-span {
+.error {
 	color: #ff0000;
 	font-size: 11px;
 	font-family: Pathway Gothic One, Arial, Helvetica, sans-serif;
