@@ -134,7 +134,7 @@ main {
     text-transform: uppercase;
     padding: 23px 21px;
     background-color: #fff;
-    border-left: 0.1px solid #000;
+    border-left: .5px solid #e9e9ea;
 }
 
 .slider__text__2 {
@@ -239,8 +239,8 @@ h2 {
     width: 146px;
     height: 270px;
     background-color: #193149;
-    left: 885px;
-    top: 1035px;
+ /*   left: 885px;
+    top: 1035px;*/
     display: none;
 }
 
@@ -258,10 +258,7 @@ h2 {
     width: 146px;
     height: 270px;
     background-color: #193149;
-    /*display: none;*/
     opacity: 0;
-    left: 581px;
-    top: 1035px;
 }
 
 @keyframes fadeOut {
@@ -270,9 +267,9 @@ h2 {
 }
 
 .ny:hover .ny__text {
-    /*display: block;*/
     animation-name: fadeOut;
     animation-duration: 1s;
+    animation-iteration-count: 3;
 }
 
 h3 {
@@ -307,12 +304,14 @@ button {
 
 .ny {
     display: inline-block;
+    position: relative;
     margin-right: 12px;
     margin-left: 12px;
 }
 
 .paris {
     display: inline-block;
+    position: relative;
 }
 
 .to__top {
@@ -516,7 +515,7 @@ footer p {
 .left_blog_part_content span {
     font-family: Arial, sans-serif;
     font-size: 10.41px;
-    margin-top: 25px;
+    margin-top: 15px;
     color: #4e5050;
     line-height: 1.461; 
     padding-bottom: 20px;
@@ -574,6 +573,11 @@ footer p {
     line-height: 1.217;
     color: #263555;
     margin-right: -22px;
+}
+
+.right_blog_part_list a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .right_blog_part_list li:before {
