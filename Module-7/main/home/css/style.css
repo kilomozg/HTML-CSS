@@ -217,12 +217,16 @@ h2 {
     width: 146px;
     height: 270px;
     background-color: #193149;
-    display: none;
-
+    opacity: 0;
 }
 
 .venice:hover .venice__text {
-    display: block;
+    transition-property: 
+        opacity; 
+    opacity: 1;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(.20, .26, .44, .07);
+    transition-delay: .2s;
 }
 
 .paris {
@@ -254,13 +258,21 @@ h2 {
     width: 146px;
     height: 270px;
     background-color: #193149;
-    display: none;
+    /*display: none;*/
+    opacity: 0;
     left: 581px;
     top: 1035px;
 }
 
+@keyframes fadeOut {
+     from { opacity: 0; }
+     to { opacity: 1; }
+}
+
 .ny:hover .ny__text {
-    display: block;
+    /*display: block;*/
+    animation-name: fadeOut;
+    animation-duration: 1s;
 }
 
 h3 {
@@ -421,7 +433,6 @@ footer p {
 .blog_part {
     display: flex;
     margin-top: 50px;
-    /*height: 100%;*/
 }
 
 .left_blog_part input {
@@ -469,6 +480,9 @@ footer p {
 
 .list_of_benefits li a:hover {
     color: #38afe5;
+}
+
+.list_of_benefits li:hover {
     background-color: #fff;
 }
 
