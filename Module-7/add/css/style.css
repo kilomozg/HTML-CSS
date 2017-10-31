@@ -1,5 +1,11 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 .wrapper {
-	width: 600px;
+	width: 960px;
 	margin: 0 auto;
 	height: auto;
 	padding: 25px;
@@ -12,7 +18,7 @@ h1 {
 }
 
 .form	{
-	width: 200px;
+	width: 250px;
 	margin: 0 auto;
 	background: #fff;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5); 
@@ -28,6 +34,12 @@ h2 {
 	padding-top: 15px;
 	margin-bottom: 30px;
 	text-transform: uppercase;
+}
+
+h3 {
+	color: #263555;
+	font-family: Pathway Gothic One, Arial, Helvetica, sans-serif;
+	font-size: 20px;
 }
 
 .error {
@@ -68,6 +80,7 @@ textarea {
 	font-family: Pathway Gothic One, Arial, Helvetica, sans-serif;
 	font-weight: 600;
 	padding-left: 5px;
+	text-transform: uppercase;
 }
 
 textarea::placeholder {
@@ -137,6 +150,56 @@ label {
 .search_button {
 	background-color: transparent;
 	margin-top: 15px;
+	padding: 3px 8px;
 	border: 1px solid #c2bbbb;
 	border-radius: 5px;
 }
+
+.map_wrapper {
+	padding: 25px 0 25px;
+	text-align: center;
+}
+
+
+.blog_img {
+  width: 290px;
+  height: 230px;
+  /*margin-top: 15px;*/
+  margin-right: 20px;
+  float: left;
+}
+
+.wrapper5 {
+	height: 255px;
+	width: 75%;
+	margin: 20px auto;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	position: relative;
+}
+
+.details {
+  	position: absolute;
+  	top: 185px;
+  	font-family: "Arial", sans-serif;
+  	font-size: 12px;
+  	border-radius: 5px;
+  	background-color: #fcf5f6;
+  	padding: 3px 10px;
+  	border: 1px solid #c1bbbb;
+}
+
+.font_resize:hover {
+	/*font-size: 30px;*/
+	transition-property: font-size; 
+	transition-duration: 3s;
+	/*transition-timing-function: cubic-bezier(.20, .96, .74, .07);*/
+	/*transition-delay: .5s;*/
+	font-size: 30px;
+}
+
+.blog_img:hover {
+	transform: rotate(180deg)); 
+	transition:all 400ms;  
+}
+
