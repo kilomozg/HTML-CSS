@@ -11,7 +11,7 @@ ul {
 }
 
 body {
-    width: 100%;
+    width: calc(100%-8px);
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
