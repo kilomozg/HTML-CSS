@@ -28,7 +28,7 @@
 				</label>
 				<br>
 				<br>
-				<textarea name="text_message" id="message" rows="12" cols="30" placeholder="message"></textarea>
+				<textarea  class="contact_us_message" name="text_message" id="message" rows="12" cols="30" placeholder="message"></textarea>
 				<br>
 				<div id="buttons">
 				<input class="buttons" type="reset" value="Clear">
@@ -38,19 +38,73 @@
 		</div>
 		<h1>Задание 2</h1>
 		<div class="form">
-			<h2>BROWSE</h2>
-			<p>Browse by Tour Operator</p>
-			<form action="#" method="POST">
-				<select class="select_style" name="tour_by_operator">
-					<option>Browse by Tour Operator</option>
-					<option value="Turkey">Турция</option>
-					<option value="France">Франция</option>
-					<option value="Spain">Испания</option>
-					<option value="Italy">Италия</option> 
-				</select>
-				<input type="text" name="tour_by_operator_message" placeholder="Browse by Tour Operator">
-			</form>
-		</div>	
+           <h2>browse</h2>
+           <form action="#" method="GET">
+             <select class="select_style" name="tour_by_operator">
+              <option>Browse by Tour Operator</option>
+              <option value="Turkey">Турция</option>
+              <option value="France">Франция</option>
+              <option value="Spain">Испания</option>
+              <option value="Italy">Италия</option> 
+             </select>
+             <textarea name="tour_by_operator_message" id="tour_by_operator_message" rows="3" cols="30" placeholder="Browse by Tour Operator"></textarea>
+             <button class="search_button">Search</button>
+           </form>
+           <h2>search</h2>
+             <span class="blue_text">All Tour Operators</span>
+             <form action="#" method="POST">
+              <label for="destination">Desstination
+              <select class="select_style" name="any_destination" id="destination">
+                <option>Any Destination</option>
+                <option value="1">Lorem ipsum.</option>
+                <option value="2">Lorem ipsum.</option>
+                <option value="3">Lorem ipsum.</option>
+                <option value="4">Lorem ipsum.</option>
+                <option value="5">Lorem ipsum.</option>
+              </select>
+              </label>
+              <br>
+              <br>
+              <label for="departing">Departing
+              <select class="select_style" name="any_departing" id="departing">
+                <option>Any Departing</option>
+                <option value="1">Lorem ipsum.</option>
+                <option value="2">Lorem ipsum.</option>
+                <option value="3">Lorem ipsum.</option>
+                <option value="4">Lorem ipsum.</option>
+                <option value="5">Lorem ipsum.</option>
+              </select>
+              </label>
+              <br>
+              <br>
+              <label for="price">Price
+              <select class="select_style" name="price" id="price">
+                <option>Any Prices</option>
+                <option value="1">Lorem ipsum.</option>
+                <option value="2">Lorem ipsum.</option>
+                <option value="3">Lorem ipsum.</option>
+                <option value="4">Lorem ipsum.</option>
+                <option value="5">Lorem ipsum.</option>
+              </select>
+              </label>
+              <br>
+              <br>
+              <label for="duration">Duration
+              <select class="select_style" name="duration" id="duration">
+                <option>Any duration</option>
+                <option value="1">Lorem ipsum.</option>
+                <option value="2">Lorem ipsum.</option>
+                <option value="3">Lorem ipsum.</option>
+                <option value="4">Lorem ipsum.</option>
+                <option value="5">Lorem ipsum.</option>
+              </select>
+              <textarea name="search_message" id="search_message" cols="30" rows="3" placeholder="Any duration"></textarea>
+              </label>
+              <button class="search_button">Search</button>
+              <br>
+              <br>
+             </form>
+         </div>	
 	</div>
 </body>
 </html>
