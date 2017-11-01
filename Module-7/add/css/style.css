@@ -113,6 +113,7 @@ textarea::placeholder {
 
 p {
 	font-size: 10px;
+	color: olive;
 }
 
 .form1 {
@@ -189,17 +190,33 @@ label {
   	border: 1px solid #c1bbbb;
 }
 
-.font_resize:hover {
-	/*font-size: 30px;*/
+.h3_font_resize:hover {
 	transition-property: font-size; 
 	transition-duration: 3s;
-	/*transition-timing-function: cubic-bezier(.20, .96, .74, .07);*/
-	/*transition-delay: .5s;*/
 	font-size: 30px;
 }
 
+.h3_font_resize:hover .details {	
+	transition-property: top, font-size; 
+	transition-duration: 3s;
+	transition-delay: .5s;	
+	top: 215px;
+	font-size: 24px;
+}
+
+.p_font_resize:hover {
+	transition-property: color; 
+	transition-duration: 1s;
+	transition-delay: .2s;
+	color: red;
+}
+
+.details:hover {
+	transition-property: padding;
+	padding: 3px 20px;
+}
+
 .blog_img:hover {
-	transform: rotate(180deg)); 
-	transition:all 400ms;  
+	transform: rotate(-45deg); 
 }
 
