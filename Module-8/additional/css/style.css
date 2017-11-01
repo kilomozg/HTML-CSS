@@ -7,6 +7,7 @@
 .wrapper1 {
 	width: 960px;
 	height: 610px;
+	margin: 0 auto;
 }
 
 header {
@@ -59,4 +60,85 @@ footer {
 	text-align: center;	
 	font-size: 16px;
 	line-height: 100px;
+}
+
+.div2 {
+	min-width: 320px;
+	margin: 25px;
+	display: flex;
+}
+
+.left1 {
+	height: 200px;
+	background-color: yellow;
+	width: 70%;
+	text-align: center;
+}
+
+.right1 {
+	height: 200px;
+	background-color: red;
+	width: 30%;
+	text-align: center;
+}	
+
+@media screen and (max-width: 768px) {
+	.div2 {
+		display: block;
+	}
+
+	.right1 {
+		width: 100%;
+	}
+	
+	.left1 {
+		width: 100%;
+	}
+}
+
+.div3 {
+	min-width: 320px;
+	height: 100%;
+	margin: 25px;
+	display: block;
+}
+
+.div3_header {
+	height: 150px;
+	background-color: red;
+}
+
+.div3_main {
+	height: 150px;
+	background-color: green;
+}
+
+ .div3_footer {
+	height: 50px;
+	background-color: blue;
+}
+
+@media screen and (max-width: 768px) {
+	.div3_inner {
+		display: flex;
+	}
+
+	.div3_main {
+		height: 250px;
+		width: 30%;
+	}
+
+	.div3_footer {
+		height: 250px;
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 468px) {
+	.div3_main {
+		background-color: olive;
+	}
+	.div3_footer {
+		background-color: orange;		
+	}
 }
