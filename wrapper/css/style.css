@@ -55,10 +55,13 @@ main {
     list-style: none;
     position: relative;
     padding: 0;
+    display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .nav_menu {
-    display: inline-block;
+/*  display: inline-block;*/
     font-family: 'Pathway Gothic One', sans-serif;
     text-transform: uppercase;
     font-size: 28px;
@@ -84,6 +87,17 @@ main {
     top: 13px;
     text-align: center;
     text-shadow: none;
+}
+
+.journey:hover {
+	transition-property: background-color, height, width, font-size, color;
+	transition-delay: .2s;
+	transition-duration: 3s;
+	background-color: #E3E8F2;
+	height: 160px;
+	width: 160px;
+	font-size: 66px;
+	color: #fff;
 }
 
 .nav_menu:hover {
@@ -137,7 +151,7 @@ main {
 .about:hover > .submenu_list {
     display: block;
     top: 100px;
-    left: 145px;
+    left: 175px;
     transition: all .2s ease-in-out;
 }
 
