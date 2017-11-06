@@ -193,8 +193,9 @@ footer {
 
 .div5 {
 	min-width: 320px;
-	height: 600px;
-	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+	/*margin: 0 auto;*/
 }
 
 
