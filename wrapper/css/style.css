@@ -27,7 +27,7 @@ h3 {
 }
 
 body {
-    min-width: 320px;
+    min-width: 455px;
     width: 80%;
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
@@ -81,7 +81,9 @@ main {
     font-size: 28px;
     color: #fff;
     margin: 0 33px;
+    padding: 5px 15px;
 }
+
 .nav_menu > a {
     text-decoration: none;
     color: inherit;
@@ -185,9 +187,6 @@ main {
     justify-content: space-around;
     margin: 0 auto;
     padding-top: 35px;
-    padding-left: 50px;
-    padding-right: 50px;
-    /*position: relative;*/
 }
 
 .footer_links {
@@ -292,10 +291,8 @@ footer p {
   padding-left: calc(100% - 70%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   .top_nav_left {
-/*    list-style: none;*/
-    /*display: flex;*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -309,7 +306,9 @@ footer p {
     align-items: center;
     justify-content: center;
   }
+}
 
+@media screen and (max-width: 720px) {
   .footer_box {
     height: 100%;
     padding: 35px 50px; 
@@ -334,5 +333,10 @@ footer p {
 
   .right {
     flex-direction: column;
+  }
+
+  footer p {
+    padding-left: 0;
+    text-align: center;
   }
 }
