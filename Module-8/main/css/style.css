@@ -5,7 +5,6 @@
 }
 
 body {
-	/*min-width: 480px;*/
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,39 +18,44 @@ body {
 }
 
 .logo {
-    font-family: "Dorsa", sans-serif;
-    width: 100%;
     margin: 20px auto;
-    text-transform: uppercase;
-    font-size: 33px;
-    line-height: 70px;
     background-color: #fff;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     text-align: center;
-    text-shadow: none;
 }
 
 .logo a {
 	text-decoration: none;
 	color: #555e74;
+	font-family: "Dorsa", sans-serif;
+	text-transform: uppercase;
+    font-size: 33px;
+    line-height: 70px;
+    font-weight: 800;
 }
 
 nav {
-	max-width: 300px;
+	max-width: 225px;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 
-.nav_list {
-	list-style: none;
+.nav_list  {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-    font-family: 'Pathway Gothic One', sans-serif;
+	justify-content: space-between;
+	list-style: none;
+	font-family: 'Pathway Gothic One', sans-serif;
     text-transform: uppercase;
     font-size: 28px;
-    /*margin: 0 33px;*/
+    margin: 0;
+}
+
+.contact {
+	padding-left: 10px;
+	margin-right: -8px;
 }
 
 .nav_list a {
@@ -64,9 +68,6 @@ nav {
 	color: #263555;
 }
 
-.nav_list_item {
-	/*margin: 3px;*/
-}
 
 .about {
 	position: relative;
@@ -109,10 +110,11 @@ main {
 	background-color: #fff;
 	display: flex;
 	justify-content: center;
+	margin-top: 50px;
 }
 
 .main_body {
-	padding: 60px 37px;
+	padding: 60px 39px;
 	height: 1680px;
 	overflow: hidden;
 }
@@ -127,13 +129,13 @@ h1 {
 
 .gallery {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .gallery_item {
 	position: relative;
-	padding-top: 40px;
+	margin-top: 40px;
 }
 
 .gallery_item img {
@@ -142,7 +144,7 @@ h1 {
 
 .gallery_item_sub {
 	position: absolute;
-	top: 40px;
+	top: 0;
 	display: none;
 }
 
@@ -290,19 +292,25 @@ p {
 		height: 100%;
 		margin: 0 auto;
 	}
-	
+
+	.main_body {
+		width: 768px;
+		height: 1000px;
+		overflow: hidden;
+	}
+
+	.gallery {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
 	.gallery_item img {
 		width: 330px;
 	}
 
 	.gallery_item:nth-of-type(2n) img {
 		margin-left: 30px;
-	}
-
-	.main_body {
-		width: 768px;
-		height: 1000px;
-		overflow: hidden;
 	}
 
 	.footer_menu_item a {
@@ -362,9 +370,25 @@ p {
 		height: 100%;
 		margin: 0 auto;
 	}
+	
+	nav {
+		max-width: 85%;	
+	}
 
-	.nav_list_item {
-		display: inline-block;
+	.nav_list {
+		display: flex;
+		align-items: center;
+	}
+
+	.list_block {
+		display: flex;
+		align-items: center;
+	}
+
+	.gallery {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	.gallery_item img {
@@ -375,10 +399,6 @@ p {
 		width: 1024px;
 		height: 750px;
 		overflow: hidden;
-	}
-
-	header {
-		display: flex;
 	}
 
 	.footer_menu_item a {
