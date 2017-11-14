@@ -177,7 +177,7 @@ footer {
 	font-family: "Open Sans", sans-serif;
 	color: #fff;
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: lighter;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -194,7 +194,7 @@ footer {
 
 .phone a, .email a {
 	font-size: 10px;
-	font-family: "Arial", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	position: relative;
 	left: 15px;
 }
@@ -225,68 +225,68 @@ footer {
 }
 
 .social_networks {
-  margin: 25px auto;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  width: 100%;
-  justify-content: center;
+  	margin: 25px auto;
+  	padding: 0;
+  	list-style: none;
+  	display: flex;
+  	width: 100%;
+  	justify-content: center;
 }
 
 .nav__item {
-  height: 45px;
-  flex-basis: 55px;
+  	height: 45px;
+  	flex-basis: 55px;
 }
 
 .nav__item>a {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
+  	display: inline-block;
+  	height: 40px;
+  	width: 40px;
 }
 
 .nav__item:nth-of-type(1)>a {
-  background-image: url(../img/sprites.png);
-  background-repeat: no-repeat;
-  background-position: -10px -10px;
-  filter: opacity(.7);
+  	background-image: url(../img/sprites.png);
+  	background-repeat: no-repeat;
+  	background-position: -10px -10px;
+  	filter: opacity(.7);
 }
 
 .nav__item:nth-of-type(2)>a {
-  background-image: url(../img/sprites.png);
-  background-repeat: no-repeat;
-  background-position: -130px -130px;
-  filter: opacity(.7);
+  	background-image: url(../img/sprites.png);
+  	background-repeat: no-repeat;
+  	background-position: -130px -130px;
+  	filter: opacity(.7);
 }
 
 .nav__item:nth-of-type(3)>a {
-  background-image: url(../img/sprites.png);
-  background-repeat: no-repeat;
-  background-position: -190px -190px;
-  filter: opacity(.7);
+    background-image: url(../img/sprites.png);
+    background-repeat: no-repeat;
+    background-position: -190px -190px;
+    filter: opacity(.7);
 }
 
 .nav__item:nth-of-type(4)>a {
-  background-image: url(../img/sprites.png);
-  background-repeat: no-repeat;
-  background-position: -190px -190px;
-  filter: opacity(.7);
+    background-image: url(../img/sprites.png);
+    background-repeat: no-repeat;
+    background-position: -190px -190px;
+    filter: opacity(.7);
 }
 
 .nav__item>a:hover {
-  filter: opacity(1);
+    filter: opacity(1);
 }
 
 p {
-  font-family: "Arial", "Helvetica", sans-serif;
-  color: #fff;
-  font-size: 10px;
-  line-height: 1.462;
-  text-align: center;
+    font-family: "Arial", "Helvetica", sans-serif;
+    color: #fff;
+    font-size: 10px;
+    line-height: 1.462;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	.wrapper {
-		width: 768px;
+		min-width: 768px;
 		height: 100%;
 		margin: 0 auto;
 	}
@@ -306,12 +306,13 @@ p {
 	}
 
 	.footer_menu_item a {
-	font-size: 18px;
+		font-size: 16px;
 	}
 
 	footer {
 		display: flex;
 		justify-content: center;
+		padding-top: 15px;
 	}
 
 	.footer_menu {
@@ -324,14 +325,34 @@ p {
 		display: block;
 	}
 
-	.phone:before {
-		content: "";
+	.contacts a {
+		font-size: 18px;
+	}
 
+	.phone:before {
+		content: "TEL: ";
+		position: absolute;
+		font-size: 12px;
+		font-family: Arial, sans-serif;
+		color: #fff;
+		margin-top: 3px;
 	}
 
 	.email:before {
 		content: "";
-	
+	}
+
+	.phone a {
+		font-family: "Arial", sans-serif;
+		font-size: 12px;
+		left: 35px;
+	}
+
+	.email a {
+		font-family: "Arial", sans-serif;
+		font-size: 12px;
+		left: 0;
+		text-transform: none;
 	}
 }
 
@@ -340,6 +361,10 @@ p {
 		width: 1024px;
 		height: 100%;
 		margin: 0 auto;
+	}
+
+	.nav_list_item {
+		display: inline-block;
 	}
 
 	.gallery_item img {
@@ -357,7 +382,11 @@ p {
 	}
 
 	.footer_menu_item a {
-	font-size: 18px;
+		font-size: 16px;
+	}
+
+	.footer_menu_contacts {
+		padding-top: 15px;
 	}
 
 	footer {
@@ -367,6 +396,7 @@ p {
 
 	.footer_menu {
 		width: 60%;
+		padding-top: 15px;
 	}
 
 	.contacts {
@@ -374,12 +404,31 @@ p {
 	}
 
 	.phone:before {
-		content: "";
-
+		content: "TEL: ";
+		position: absolute;
+		font-size: 12px;
+		font-family: Arial, sans-serif;
+		color: #fff;
+		margin-top: 3px;
 	}
 
 	.email:before {
 		content: "";
-	
+	}
+
+	.phone a, .email a {
+		font-size: 12px;
+		font-family: "Arial", sans-serif;
+	}
+
+	.phone a {
+		position: relative;
+		left: 30px;
+	}
+
+	.email a {
+		position: relative;
+		left: 2px;
+		text-transform: none;
 	}
 }
