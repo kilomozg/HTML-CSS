@@ -1,6 +1,6 @@
 * {
 	padding: 0;
-	margin: 0;
+	margin: 8;
 	box-sizing: border-box;
 }
 
@@ -10,9 +10,8 @@ body {
     background-size: cover;
 }
 
-.container {
-	min-width: 480px;
-	max-width: 1024px;
+.wrapper {
+	width: 480px;
 	min-height: 100%;
 	margin: 0 auto;
 }
@@ -20,8 +19,7 @@ body {
 .logo {
     margin: 20px auto;
     background-color: #fff;
-    min-width: 78px;
-    max-width: 78px;
+    width: 70px;
     height: 70px;
     border-radius: 50%;
     text-align: center;
@@ -34,11 +32,123 @@ body {
 	text-transform: uppercase;
     font-size: 33px;
     line-height: 70px;
-    text-decoration: none;
 }
 
-.logo a:hover {
+nav {
+	max-width: 225px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.nav_list  {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 0;
+}
+
+.contact {
+	padding-left: 10px;
+	margin-right: -8px;
+}
+
+.nav_list a {
 	text-decoration: none;
-	color: #555e74;
-	opacity: .7;
+	color: #fff;
+	font-size: 20px;
+}
+
+.nav_list a:hover {
+	color: #263555;
+}
+
+
+.about {
+	position: relative;
+}
+
+.about:hover .submenu {
+	display: block;
+}
+
+.submenu {
+	position: absolute;
+	width: 45px;
+	height: 70px;
+	background-color: #fff;
+	list-style: none;
+	text-align: center;
+	border-radius: 5px;
+	left: -3px;
+	line-height: .75;
+	display: none;
+	margin: 0;
+}
+
+.submenu a {
+	color: #6b7488;
+	font-size: 14px;
+}
+
+.submenu:before {
+	content: "";
+    border-style: solid;
+    border-width: 0 3px 3px 3px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -3px;
+    left: 19px;
+}
+
+main {
+	width: 480px;
+	background-color: #fff;
+	height: 1700px;
+}
+
+h1 {
+	font-family: "Pathway Gothic One", sans-serif;
+	font-size: 28px;
+	color: #263555;
+	text-transform: uppercase;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	padding-left: 40px;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.gallery_item {
+	position: relative;
+	margin-top: 40px;
+}
+
+.gallery_item img {
+	width: 405px;
+}
+
+.gallery_item_sub {
+	position: absolute;
+	top: 0;
+	display: none;
+}
+
+.gallery_item:hover .gallery_item_sub {
+	display: block;
+	opacity: .7
+}
+
+@media screen and (min-width: 768px) {
+	main {
+	width: 770px;
+	height: 1070px;
+	}
 }

@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face { 
+	font-family: "Brandon Regular"; 
+	src: 	url("../fonts/Brandon Regular/BrandonGrotesque-Regular.eot");
+	src: 	url("../fonts/Brandon Regular/BrandonGrotesque-Regular.woff") format("woff"), 
+			url("../fonts/Brandon Regular/BrandonGrotesque-Regular.ttf") format("truetype"); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+
+@font-face { 
+	font-family: "Brandon Bold";
+	src: 	url("../fonts/Brandon Bold/BrandonGrotesque-Bold.eot");
+	src: 	url("../fonts/Brandon Bold/BrandonGrotesque-Bold.woff") format("woff"), 
+			url("../fonts/Brandon Bold/BrandonGrotesque-Bold.ttf") format("truetype"); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+@font-face {
+	font-family: "Brandon Light";
+	src: 	url("../fonts/Brandon Light/BrandonGrotesque-Light.eot");
+	src:	url("../fonts/Brandon Light/BrandonGrotesque-Light.woff") format("woff"),  
+			url("../fonts/Brandon Light/BrandonGrotesque-Light.ttf") format("truetype"); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: "Cubano Regular";
+	src: 	url("../fonts/Cubano Regular/cubano-regular-webfont.eot");
+	src: 	url("../fonts/Cubano Regular/cubano-regular-webfont.woff") format("woff"),
+			url("../fonts/Cubano Regular/cubano-regular-webfont.ttf") format("truetype");
+	font-weight: normal; 
+	font-style: normal; 
+}
+
+.wrapper	{
+	width: 100%;
+}
+
+.first-page	{
+	height: 620px;
+	background-image: url(../img/bg-first-page.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+ .nav	{
+ 	display: inline-flex;
+	padding-top: 50px;
+	padding-left: 275px;
+	padding-right: 230px;
+ }
+
+ .nav_menu {
+ 	list-style: none;
+ 	justify-content: flex-end;
+ }
+
+ .nav_menu_list {
+	display: flex; 
+ }
+
+ .logo {
+ 	font-family: "Cubano Regular";
+ 	font-size: 25px;
+ 	font-transform: uppercase;
+ 	color: #fff;
+ 	position: relative;
+ }
+
+ .logo:before {
+ 	content: url("../img/paper-plane.png");
+ 	position: absolute;
+ 	left: -40px;
+ }
+
+ .nav_item a {
+ 	font-family: "Brandon Regular";
+ 	font-size: 18px;
+ 	list-style: none;
+ 	color: #fff;
+ 	text-decoration: none;
+ }
