@@ -286,4 +286,8 @@
 		flex-direction: column;
 		justify-content: space-between;
 	}
+
+	.left_column, .right_column {
+		margin: 0 auto;
+	}
 }
