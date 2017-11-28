@@ -40,37 +40,47 @@
 }
 
 .wrapper	{
-	width: 100%;
+	min-width: 320px;
 }
 
 .first-page	{
 	height: 620px;
-	background-image: url(../img/bg-first-page.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
+	width: 100%;
+	background-image: url(../img/bg3.jpg);
+	background-size: cover;	
+	background-position: center center;
 }
+
  .nav	{
- 	display: inline-flex;
+ 	display: flex;
 	padding-top: 50px;
-	padding-left: 275px;
-	padding-right: 230px;
+	padding-left: 20%;
  }
 
  .nav_menu {
- 	list-style: none;
- 	justify-content: flex-end;
+ 	display: flex;
  }
 
  .nav_menu_list {
 	display: flex; 
+	list-style: none;
+ }
+
+ .nav_item {
+ 	padding-left: 35px;
  }
 
  .logo {
  	font-family: "Cubano Regular";
  	font-size: 25px;
  	font-transform: uppercase;
- 	color: #fff;
  	position: relative;
+ 	margin-right: 40%;
+ }
+
+ .logo a {
+ 	color: #fff;
+ 	text-decoration: none;
  }
 
  .logo:before {
@@ -86,3 +96,194 @@
  	color: #fff;
  	text-decoration: none;
  }
+
+ .titles {
+ 	display: block;
+ 	margin: 165px auto;
+	height: 260px;
+	text-align: center;
+ }
+
+ .sub_title {
+ 	font-family: "Brandon Regular";
+ 	color: #fff;
+ 	font-size: 32px;
+ }
+
+.main_title {
+	font-family: "Brandon Regular";
+ 	color: #fff;
+ 	font-size: 66px;
+ 	text-transform: uppercase;
+ 	/*letter-spacing: -2px;*/
+ 	font-weight: 100;
+ 	margin-top: 35px;
+ 	margin-bottom: 40px;
+}
+
+.button {
+	display: inline-block;
+	padding: 15px 65px;
+	border: 3px solid #fff;
+	border-radius: 4px;
+	font-family: "Brandon Bold";
+	text-decoration: none;
+	color: #fff;
+	font-size: 23px;
+}
+
+.second_page {
+	display: flex;
+	padding: 120px 20%;
+}
+
+.third_page {
+	display: flex;
+	padding: 120px 20%;
+	background-color: #fafafa;
+}
+
+.second_page p, .third_page p {
+	font-family: "Brandon Regular";
+	font-size: 18px;
+	line-height: 1.333;
+	color: #777777;
+	margin-top: 25px;
+}
+
+.web {
+	font-family: "Brandon Regular";
+	font-size: 60px;
+	font-weight: 100;
+}
+
+.development {
+	font-family: "Brandon Bold";
+	font-size: 60px;
+	font-weight: 800;
+}
+
+.second_page_img {
+	margin-left: 180px;
+	padding-top: 25px;
+}
+
+.third_page_img {
+	margin-right: 180px;
+	padding-top: 25px;
+}
+
+.fourth_page {
+	height: 590px;
+}
+
+.fourth_page_container {
+	display: flex;
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.left_column {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	margin-right: 110px;
+}
+
+.fourth_page_header {
+	position: relative;
+	font-family: "Brandon Regular", sans-serif;
+	font-size: 22px;
+	margin-bottom: 23px;
+	font-weight: 800;
+	letter-spacing: 2px;
+}
+
+.fourth_page_text {
+	font-family: "Brandon Regular", sans-serif;
+	font-size: 18px;
+	color: #777;
+	margin-bottom: 60px;
+}
+
+.right_column {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.bandi:before {
+	content: url(../img/Person-Icon.png);
+	position: absolute;
+	left: -90px;
+}
+
+.mad:before {
+	content: url(../img/iPad-Icon.png);
+	position: absolute;
+	left: -90px;
+} 
+
+.uiux:before {
+	content: url(../img/Star-Icon.png);
+	position: absolute;
+	left: -90px;
+} 
+
+.wandgd:before {
+	content: url(../img/Star-Icon.png);
+	position: absolute;
+	left: -90px;
+} 
+
+.anim:before {
+	content: url(../img/Video-Icon.png);
+	position: absolute;
+	left: -90px;
+} 
+
+.photo:before {
+	content: url(../img/Camera.png);
+	position: absolute;
+	left: -90px;
+} 
+
+@media screen and (max-width: 968px) {
+	.nav_menu_list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav_item {
+		padding-bottom: 5px;
+	}
+
+	.titles {
+		margin-top: 50px;
+	}
+
+	.main_title {
+		margin-top: 15px;
+	}
+
+	.second_page {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.third_page {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.second_page_img, .third_page_img  {
+		margin: 0 auto; 
+	}
+
+	.fourth_page_container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
