@@ -44,7 +44,8 @@
 }
 
 .first-page	{
-	height: 620px;
+	/*height: 620px;*/
+	height: 100%;
 	width: 100%;
 	background-image: url(../img/bg3.jpg);
 	background-size: cover;	
@@ -155,12 +156,14 @@
 	font-family: "Brandon Regular";
 	font-size: 60px;
 	font-weight: 100;
+	padding-right: 10px;
 }
 
 .development {
 	font-family: "Brandon Bold";
 	font-size: 60px;
 	font-weight: 800;
+	padding-right: 10px;
 }
 
 .second_page_img  {
@@ -376,6 +379,7 @@
 	font-size: 60px;
 	font-weight: 100;
 	color: #fff;
+	padding-right: 10px;
 }
 
 .team {
@@ -417,6 +421,109 @@
 	font-family: "Brandon Regular", sans-serif;
 	color: #ebebeb;
 	font-size: 16px;
+	margin-bottom: 5%;
+}
+
+.social_networks {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.sevens_page_bottom {
+	display: block;
+	width: 65%;
+	text-align: center;
+	margin: 55px auto;
+}
+
+.sevens_page_bottom_text  {
+	font-family: "Brandon Regular", sans-serif;
+	font-size: 20px;
+	color: #ebebeb;
+}
+
+.eighth_page {
+	background-color: #7690c5;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.eighth_page_container {
+	display: flex;
+	width: 70%;
+	margin: 0 auto; 
+	padding-top: 80px;
+	justify-content: space-between;
+}
+
+.eighth_page_left {
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+}
+
+
+
+.eighth_page_left_container {
+	display: flex;
+	/*width: 50%;*/
+	/*padding-right: 110px;*/
+}
+
+.phone, .twt, .google_plus  {
+	font-family: "Brandon Regular", sans-serif;
+	font-size: 18px;
+	color: #fff;
+	padding-top: 55px;
+	padding-left: 35px;
+	padding-right: 55px;
+	position: relative;
+}
+
+.email, .our_facebook, .our_pinterest {
+	font-family: "Brandon Regular", sans-serif;
+	font-size: 18px;
+	color: #fff;
+	padding-left: 35px;
+	padding-top: 55px;
+	position: relative;
+}
+
+.email:before {
+	content: url(../img/Mail-Icon.png);
+	position: absolute;
+	left: 0;
+}
+
+.our_facebook:before {
+	content: url(../img/Facebook-Icon.png);
+	position: absolute;
+	left: 0;
+}
+
+.our_pinterest:before {
+	content: url(../img/Pinterest-Icon.png);
+	position: absolute;
+	left: 0;
+}
+
+.phone:before {
+	content: url(../img/Mobile-Icon.png);
+	position: absolute;
+	left: 0;
+}
+
+.twt:before {
+	content: url(../img/Twitter-Icon.png);
+	position: absolute;
+	left: 0;
+}
+
+.google_plus:before {
+	content: url(../img/Google+-Icon.png);
+	position: absolute;
+	left: 0;
 }
 
 @media screen and (max-width: 968px) {
