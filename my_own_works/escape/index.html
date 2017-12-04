@@ -17,10 +17,10 @@
 			<div class="nav_menu">
 				<ul class="nav_menu_list">
 					<li class="nav_item"><a href="#">Home</a></li>
-					<li class="nav_item"><a href="#">Services</a></li>
-					<li class="nav_item"><a href="#">Clients</a></li>
-					<li class="nav_item"><a href="#">Team</a></li>
-					<li class="nav_item"><a href="#">Contact</a></li>
+					<li class="nav_item"><a href="#Services">Services</a></li>
+					<li class="nav_item"><a href="#Clients">Clients</a></li>
+					<li class="nav_item"><a href="#Team">Team</a></li>
+					<li class="nav_item"><a href="#Contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -30,7 +30,7 @@
 		<a href="#" class="button">Learn More</a>
 		</div>
 	</div>
-	<div class="second_page">
+	<div id="Services" class="second_page">
 		<div>
 			<span class="web">Web</span>
 			<span class="development">Development</span>
@@ -81,7 +81,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="fifth_page">
+	<div id="Clients" class="fifth_page">
 		<div class="fifth_page_container">
 			<div class="fifth_page_header">
 				<span class="web">Awesome</span>  <span class="development">Clients</span>
@@ -112,7 +112,7 @@
 		<div><img src="./img/Tuts.png" alt="Tuts+"></div>
 		<div><img src="./img/Microlancer.png" alt="Microlancer"></div>
 	</div>
-	<div class="sevens_page">
+	<div id="Team" class="sevens_page">
 		<div class="sevens_page_header">
 			<span class="amazing">Amazing</span>  <span class="team">Team</span>
 			<p>These wonderful people make work enjoyable.</p>
@@ -202,7 +202,7 @@
 			</span>
 		</div>
 	</div>
-	<div class="eighth_page">
+	<div id="Contact" class="eighth_page">
 		<div class="eighth_page_container">
 			<div class="eighth_page_left">
 				<div class="sevens_page_left_header">
@@ -213,7 +213,7 @@
 				</span>
 				<div class="eighth_page_left_container">
 					<div class="eighth_page_left_container_left">
-						<div class="phone">(416) 555-0000</div>
+						<div class="phone"><a href="tel:(416) 555-0000">(416) 555-0000</a></div>
 						<div class="twt">@escape</div>
 						<div class="google_plus">plus.com/escape</div>
 					</div>
@@ -226,17 +226,21 @@
 			</div>
 			<div class="eighth_page_right">
 				<form class="contact_form" action="" method="post" name="contact_form">
-					<ul>
-						<li>
-						<span class="required_notification">* Denotes Required Field</span>
-						</li>
-						<li>
-						<input type="text" name="name" placeholder="Your Name:">
-						</li>
-					</ul>
+					<label for="name">
+						<input type="text" name="name" placeholder="Your Name *">
+					</label>
+					<label for="email">
+						<input type="text" name="name" placeholder="Your E-mail *">
+					</label>
+					<label for="Message">
+						<textarea class="message" name="subject"" placeholder="Your Message *"></textarea>
+					</label>
 				</form>
 			</div>
-			</div>
+		</div>
+		<hr>
+		<div class="authority">
+			<span>© 2014 Escape by FreebiesXpress • Made In Toronto</span>
 		</div>
 	</div>
 </div>
